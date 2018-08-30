@@ -6,6 +6,7 @@ export const router: Routes = [
 
     { path: '',  component: LandingPageComponent },
     { path: 'landing', component: LandingPageComponent }
+    
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
