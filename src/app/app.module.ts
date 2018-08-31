@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HeaderComponent } from './header/header.component';
-import { MoviedbService } from  './Moviedb.service'
-
+import { MoviedbService } from  './moviedb.service'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

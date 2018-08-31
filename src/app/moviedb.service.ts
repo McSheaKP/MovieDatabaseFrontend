@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MoviedbService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   //Api: https://api.themoviedb.org/3/movie/550?api_key=14c47bc2bb1b6bc3d2eb2d0255da239f
 
