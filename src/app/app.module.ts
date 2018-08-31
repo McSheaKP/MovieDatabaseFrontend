@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HeaderComponent } from './header/header.component';
+import { MoviedbService } from  './Moviedb.service'
+
 
 @NgModule({
   declarations: [
@@ -19,9 +21,10 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     ClarityModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     routes
   ],
-  providers: [],
+  providers: [MoviedbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
