@@ -9,13 +9,15 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { HeaderComponent } from './header/header.component';
 import { MoviedbService } from  './moviedb.service'
 import { HttpClientModule } from '@angular/common/http';
+import { LargeCardDisplayComponent } from './large-card-display/large-card-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     LoginPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    LargeCardDisplayComponent
   ],
   imports: [
     BrowserModule,
