@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviedbService} from '../moviedb.service';
 
 @Component({
   selector: 'app-large-card-display',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LargeCardDisplayComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _mdbs: MoviedbService) {}
 
   ngOnInit() {
+    this._mdbs.getData()
+    .subscribe( (res: any ) => {
+      console.log("loggin the response", res);
+
+    })
   }
 
 }
